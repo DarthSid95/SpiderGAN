@@ -56,9 +56,9 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://siddarthasokan.com" target="_blank">Siddarth Asokan and</a><sup>1</sup></span>
+                <a href="https://siddarthasokan.com" target="_blank">Siddarth Asokan</a><sup>1</sup> and </span>
                 <span class="author-block">
-                  <a href="https://sites.google.com/view/spectrumlabeeiisc/spectrum-lab" target="_blank">Chandra Sekhar Seelamantula</a><sup>1</sup></span>
+                  <a href="https://sites.google.com/view/spectrumlabeeiisc/spectrum-lab" target="_blank">Chandra Sekhar Seelamantula</a><sup>2</sup></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
@@ -99,22 +99,11 @@
                       <a href="https://openaccess.thecvf.com/content/CVPR2023/supplemental/Asokan_Spider_GAN_Leveraging_CVPR_2023_supplemental.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
+                        <i class="fa-solid fa-browser"></i>
                       </span>
                       <span>Supplementary</span>
                     </a>
                   </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
@@ -126,6 +115,43 @@
                   <span>arXiv</span>
                 </a>
               </span>
+
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/DarthSid95/SpiderDCGAN" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Spider DCGAN</span>
+                  </a>
+                </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/DarthSid95/SpiderStyleGAN" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Spider StyleGAN</span>
+                  </a>
+                </span>
+
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/DarthSid95/clean-sid" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Clean-SID</span>
+                  </a>
+                </span>
+
+
             </div>
           </div>
         </div>
@@ -145,7 +171,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Cascaded "multi-stage" Spider GANs are capable of producing interpolations of varying degrees of fineness, depending on the stage in whihc interpolation are carried out. 
       </h2>
     </div>
   </div>
@@ -160,7 +186,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Training Generative adversarial networks (GANs) stably is a challenging task. The generator in GANs transform noise vectors, typically Gaussian distributed, into realistic data such as images. In this paper, we propose a novel approach for training GANs with images as inputs, but without enforcing any pairwise constraints. The intuition is that images are more structured than noise, which the generator can leverage to learn a more robust transformation. The process can be made efficient by identifying closely related datasets, or a “friendly neighborhood” of the target distribution, inspiring the moniker, Spider GAN. To define friendly neighborhoods leveraging proximity between datasets, we propose a new measure called the signed inception distance (SID), inspired by the polyharmonic kernel. We show that the Spider GAN formulation results in faster convergence, as the generator can discover correspondence even between seemingly unrelated datasets, for instance, between Tiny-ImageNet and CelebA faces. Further, we demonstrate cascading Spider GAN, where the output distribution from a pre-trained GAN generator is used as the input to the subsequent network. Effectively, transporting one distribution to another in a cascaded fashion until the target is learnt – a new flavor of transfer learning. We demonstrate the efficacy of the Spider approach on DCGAN, conditional GAN, PGGAN, StyleGAN2 and StyleGAN3. The proposed approach achieves state-of-the-art Fréchet inception distance (FID) values, with one-fifth of the training iterations, in comparison to their baseline counterparts on high-resolution small datasets such as MetFaces, Ukiyo-E Faces and AFHQ-Cats. 
           </p>
         </div>
       </div>
@@ -223,7 +249,7 @@
           
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/watch?v=UVxJcMO5hvs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -277,7 +303,7 @@
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/CVPR2023_SpiderGAN_Poster.pdf" width="100%" height="550">
           </iframe>
         
       </div>
@@ -290,7 +316,15 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>
+        @InProceedings{Asokan_2023_CVPR,
+        author    = {Asokan, Siddarth and Seelamantula, Chandra Sekhar},
+        title     = {Spider GAN: Leveraging Friendly Neighbors To Accelerate GAN Training},
+        booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+        month     = {June},
+        year      = {2023},
+        pages     = {3883-3893}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
